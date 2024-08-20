@@ -16,11 +16,9 @@ const Register: React.FC = () => {
 
   return (
     <div className="h-svh flex bg-violet-50">
-      {/* Left Side */}
 
       <img src={logo} alt="Logo" />
 
-      {/* Right Side */}
       <div className="w-1/2 flex flex-col justify-center items-center ">
         <h2 className="text-2xl font-bold mb-8">Register</h2>
         <>
@@ -45,6 +43,7 @@ const Register: React.FC = () => {
             onChange={setRepeatPassword}
             className="mb-8"
           />
+
           <MaterialButton
             className="w-full bg-sky-700 font-bold hover:bg-blue-700 text-white"
             label="Sign up"
@@ -52,7 +51,7 @@ const Register: React.FC = () => {
           />
           <p className="text-sm text-gray-600 ">
             Already have an account?{" "}
-            <a href="/" className="text-sky-700 hover:underline">
+            <a href="/login" className="text-sky-700 hover:underline">
               Login
             </a>
           </p>
