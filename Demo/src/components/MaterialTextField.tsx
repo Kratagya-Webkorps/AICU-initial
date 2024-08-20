@@ -7,9 +7,10 @@ interface MaterialTextFieldProps {
   type: string;
   value: string;
   onChange: (value: string) => void;
+  className?:string
 }
 
-const MaterialTextField: React.FC<MaterialTextFieldProps> = ({ label, type, value, onChange }) => {
+const MaterialTextField: React.FC<MaterialTextFieldProps> = ({ label, type, value, onChange,className }) => {
   const textFieldRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const MaterialTextField: React.FC<MaterialTextFieldProps> = ({ label, type, valu
   };
 
   return (
-    <div className="p-6 flex flex-col">
+    <div className="p-6 flex flex-col w-1/2">
       <>
         <Label label={label}></Label>
       </>
@@ -41,6 +42,7 @@ const MaterialTextField: React.FC<MaterialTextFieldProps> = ({ label, type, valu
           ref={textFieldRef}
           label={label}
           type={type}
+          className={className}
         />
       </>
     </div>

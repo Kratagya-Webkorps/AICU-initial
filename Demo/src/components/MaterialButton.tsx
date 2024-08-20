@@ -28,13 +28,13 @@ const MaterialButton: React.FC<MaterialButtonProps> = ({ label, onClick, classNa
   };
   
   return (
-    <div className={`p-6`}>
+    <div className="p-6 flex flex-col w-1/2">
       <md-filled-button
         onClick={onClick}
-        // style={{
-        //   "--md-sys-color-primary":getPrimaryColor(),
-        //   "--md-sys-color-on-primary": "var(--tw-text-opacity, 1) " + className?.split(' ').find(cls => cls.startsWith('text-')) || "#FFFFFF",
-        // }}
+        style={{
+          "--md-sys-color-primary":getPrimaryColor(),
+        }}
+        
         className={className}
       >
         {label}
