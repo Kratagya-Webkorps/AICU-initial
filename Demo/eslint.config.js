@@ -18,6 +18,9 @@ export default tseslint.config({
   },
   rules: {
     ...reactHooks.configs.recommended.rules,
+    "react/jsx-no-undef": "off",
+    "react/jsx-pascal-case": "off",
+    '@typescript-eslint/ban-ts-comment': 'off', 
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },

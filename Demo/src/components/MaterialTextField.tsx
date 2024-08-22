@@ -42,6 +42,11 @@ const MaterialTextField: React.FC<MaterialTextFieldProps> = ({ label, type, valu
           ref={textFieldRef}
           label={label}
           type={type}
+          style={{
+            "--md-sys-color-primary": "#881337",
+            "--md-outlined-text-field-label-text-color": "#881337",
+            "--md-outlined-text-field-input-text-color": "#881337",
+          }}
           className={className}
         />
       </>

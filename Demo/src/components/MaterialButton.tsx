@@ -39,6 +39,12 @@ const MaterialButton: React.FC<MaterialButtonProps> = ({ label, onClick, classNa
       >
         {label}
       </md-filled-button>
+      <p className="text-sm text-gray-600 mt-1 ">
+            Already have an account?{" "}
+            <a href="/login" className="text-sky-700 hover:underline">
+              Login
+            </a>
+          </p>
     </div>
   );
 };

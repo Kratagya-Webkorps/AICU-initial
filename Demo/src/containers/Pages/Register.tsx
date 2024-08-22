@@ -13,7 +13,6 @@ const Register: React.FC = () => {
     console.log({ email, password, repeatPassword });
     // Your registration logic here
   };
-
   return (
     <div className="h-svh flex bg-violet-50">
 
@@ -49,12 +48,7 @@ const Register: React.FC = () => {
             label="Sign up"
             onClick={handleRegister}
           />
-          <p className="text-sm text-gray-600 ">
-            Already have an account?{" "}
-            <a href="/login" className="text-sky-700 hover:underline">
-              Login
-            </a>
-          </p>
+         
         </>
       </div>
     </div>
